@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Anders Nylund",
+  "description": "andersnylund.com",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Anders Nylund <anders.nylund.an@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "babel-plugin-styled-components": "^1.9.2",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/andersnylund/andersnylund"
   }
 }
