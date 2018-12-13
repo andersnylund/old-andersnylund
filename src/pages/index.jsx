@@ -1,39 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
 import Image from '../components/Image';
 import Footer from '../components/Footer';
-
-const Container = styled.div`
-  color: #fcbfb7;
-`;
-
-const Top = styled.div`
-  background: #8aa1b1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-`;
-
-const Font = styled.div`
-  margin: 2rem;
-`;
+import Pacifico from '../components/fonts/Pacifico';
+import Background from '../components/Background';
+import Header from '../components/Header';
+import ItemContainer from '../components/ItemContainer';
 
 const IndexPage = () => (
-  <Container>
-    <Top>
-      <Font>
-        <h1>Anders Nylund</h1>
-      </Font>
-      <Image src={github} alt="GitHub logo" />
-      <Image src={linkedin} alt="LinkedIn logo" />
-    </Top>
+  <div>
+    <Background>
+      <Pacifico>
+        <Header text="andersnylund" href="/" />
+      </Pacifico>
+      <ItemContainer>
+        <Image
+          src={github}
+          alt="GitHub logo"
+          href="https://www.github.com/andersnylund"
+        />
+        <Image
+          src={linkedin}
+          alt="LinkedIn logo"
+          href="https://www.linkedin.com/in/andersnylund/"
+        />
+      </ItemContainer>
+    </Background>
     <Footer />
-  </Container>
+  </div>
 );
 
 export default IndexPage;

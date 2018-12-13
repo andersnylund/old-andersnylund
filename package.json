@@ -1,5 +1,5 @@
 {
-  "name": "Anders Nylund",
+  "name": "andersnylund",
   "description": "andersnylund.com",
   "version": "1.0.0",
   "author": "Anders Nylund <anders.nylund.an@gmail.com>",
@@ -19,7 +19,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "typeface-pacifico": "^0.0.54"
   },
   "keywords": [
     "gatsby"
