@@ -2,7 +2,7 @@ import React from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
 
-import Link from './styles/Link';
+import Link from '../styles/Link';
 
 const Img = styled.img`
   height: 16rem;

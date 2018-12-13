@@ -4,12 +4,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background: #8aa1b1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  padding: 0 2rem;
+  padding: 2rem;
+  width: auto;
+  height: auto;
 `;
 
 function Background({ children }) {
