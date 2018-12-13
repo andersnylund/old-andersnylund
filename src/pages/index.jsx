@@ -8,7 +8,7 @@ export const StyledDiv = styled.div`
 
 const IndexPage = () => (
   <StyledDiv>
-    <Typography variant="h1">Anders Nylund</Typography>
+    <Typography variant="h2">Anders Nylund</Typography>
   </StyledDiv>
 );
 
