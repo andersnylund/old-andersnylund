@@ -4,16 +4,25 @@ import styled from 'styled-components';
 
 import Link from '../styles/Link';
 
-const StyledHeader = styled.h1`
-  margin: 0;
+const StyledH1 = styled.h1`
+  margin: 0 2rem 1rem;
   user-select: none;
+`;
+
+const StyledLink = styled(Link)`
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px ${props => props.theme.grey};
+
+  @media (max-width: ${props => props.theme.mobile}) {
+    font-size: 1rem;
+  }
 `;
 
 function Header({ text, href }) {
   return (
-    <Link href={href}>
-      <StyledHeader>{text}</StyledHeader>
-    </Link>
+    <StyledLink href={href}>
+      <StyledH1>{text}</StyledH1>
+    </StyledLink>
   );
 }
 

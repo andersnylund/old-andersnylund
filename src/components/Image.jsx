@@ -7,7 +7,7 @@ import Link from '../styles/Link';
 const Img = styled.img`
   height: 16rem;
 
-  @media (max-width: 400px) {
+  @media (max-width: ${props => props.theme.mobile}) {
     height: 10rem;
   }
 `;

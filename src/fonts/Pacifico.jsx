@@ -5,8 +5,7 @@ import 'typeface-pacifico';
 
 const Wrapper = styled.div`
   font-family: 'Pacifico';
-  font-size: 2rem;
-  color: #fcbfb7;
+  color: ${props => props.theme.pink};
 `;
 
 const Pacifico = ({ children }) => <Wrapper>{children}</Wrapper>;
