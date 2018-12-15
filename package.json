@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "andersnylund",
+  "description": "andersnylund.com",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Anders Nylund <anders.nylund.an@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.6.1",
+    "@wapps/gatsby-plugin-material-ui": "^1.1.0",
     "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
@@ -19,7 +20,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "typeface-pacifico": "^0.0.54"
   },
   "keywords": [
     "gatsby"
@@ -44,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/andersnylund/andersnylund"
   }
 }

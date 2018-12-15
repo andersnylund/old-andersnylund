@@ -1,15 +1,13 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
-import { StyledDiv } from './index';
-
 const NotFoundPage = () => (
-  <StyledDiv>
+  <div>
     <Typography variant="h1">NOT FOUND</Typography>
     <Typography>
       You just hit a route that doesn&#39;t exist... the sadness.
     </Typography>
-  </StyledDiv>
+  </div>
 );
 
 export default NotFoundPage;

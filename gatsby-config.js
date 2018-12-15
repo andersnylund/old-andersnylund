@@ -22,10 +22,11 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/brackets.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-styled-components',
+    `@wapps/gatsby-plugin-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
