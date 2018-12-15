@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
@@ -10,14 +10,9 @@ import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
 import MainContainer from '../components/MainContainer';
 import theme from '../styles/theme';
+import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
-
-const Page = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`;
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
