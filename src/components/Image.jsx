@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Link from '../styles/Link';
 
 const Img = styled.img`
+  margin: 2rem;
   height: 16rem;
 
   @media (max-width: ${props => props.theme.mobile}) {

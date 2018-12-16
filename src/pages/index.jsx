@@ -14,7 +14,7 @@ import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
 import Roboto from '../fonts/Roboto';
-import SubHeader from '../components/SubHeader';
+import Divider from '../components/Divider';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -22,18 +22,18 @@ const IndexPage = () => (
       <GlobalStyle />
       <Page>
         <Pacifico>
-          <Header text="andersnylund" href="/" />
+          <Header />
         </Pacifico>
         <Content>
-          <SubHeader />
-          <Roboto>
-            <p>Software developer</p>
-            <p>
-              Creating stuff for the web. Solving technical and non-technical
-              problems
-            </p>
-            <p>Take a look at what I&#39;ve been doing lately</p>
-          </Roboto>
+          <div>
+            <Roboto fontSize="3rem" letterSpacing="0.3rem">
+              Software developer
+            </Roboto>
+            <Divider />
+            <Roboto fontSize="2rem" letterSpacing="0.1rem">
+              Take a look at what I&#39;ve been doing lately
+            </Roboto>
+          </div>
           <ItemContainer>
             <Image
               src={github}
@@ -47,8 +47,8 @@ const IndexPage = () => (
             />
           </ItemContainer>
         </Content>
-        <Footer />
       </Page>
+      <Footer />
     </div>
   </ThemeProvider>
 );

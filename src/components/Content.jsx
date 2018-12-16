@@ -11,6 +11,7 @@ const Container = styled.div`
   margin-right: auto;
   padding: 0 2rem;
   justify-content: space-around;
+  text-align: center;
 `;
 
 function Content({ children }) {

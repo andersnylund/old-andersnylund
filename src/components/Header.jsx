@@ -1,12 +1,24 @@
 import React from 'react';
-import { string } from 'prop-types';
 import styled from 'styled-components';
 
 import Link from '../styles/Link';
 
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 2rem 0rem;
+`;
+
 const StyledH1 = styled.h1`
-  margin: 0 2rem 1rem;
   user-select: none;
+  margin: 1rem 1rem 0;
+`;
+
+const StyledH3 = styled.h3`
+  user-select: none;
+  margin: 1rem 1rem 0;
 `;
 
 const StyledLink = styled(Link)`
@@ -17,21 +29,17 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function Header({ text, href }) {
+function Header() {
   return (
-    <StyledLink href={href}>
-      <StyledH1>{text}</StyledH1>
-    </StyledLink>
+    <Container>
+      <StyledLink href="https://www.andersnylund.com">
+        <StyledH1>andersnylund</StyledH1>
+      </StyledLink>
+      <StyledLink href="https://blog.andersnylund.com">
+        <StyledH3>blog -&gt;</StyledH3>
+      </StyledLink>
+    </Container>
   );
 }
-
-Header.propTypes = {
-  text: string.isRequired,
-  href: string,
-};
-
-Header.defaultProps = {
-  href: '',
-};
 
 export default Header;
