@@ -8,11 +8,13 @@ import Footer from '../components/Footer';
 import Pacifico from '../fonts/Pacifico';
 import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
-import MainContainer from '../components/MainContainer';
+import Content from '../components/Content';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
+import Roboto from '../fonts/Roboto';
+import SubHeader from '../components/SubHeader';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -22,7 +24,16 @@ const IndexPage = () => (
         <Pacifico>
           <Header text="andersnylund" href="/" />
         </Pacifico>
-        <MainContainer>
+        <Content>
+          <SubHeader />
+          <Roboto>
+            <p>Software developer</p>
+            <p>
+              Creating stuff for the web. Solving technical and non-technical
+              problems
+            </p>
+            <p>Take a look at what I&#39;ve been doing lately</p>
+          </Roboto>
           <ItemContainer>
             <Image
               src={github}
@@ -35,7 +46,7 @@ const IndexPage = () => (
               href="https://www.linkedin.com/in/andersnylund/"
             />
           </ItemContainer>
-        </MainContainer>
+        </Content>
         <Footer />
       </Page>
     </div>

@@ -5,14 +5,20 @@ import styled from 'styled-components';
 const Container = styled.div`
   flex: 1;
   display: flex;
+  flex-direction: column;
+  max-width: ${props => props.theme.maxWidth};
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  justify-content: space-around;
 `;
 
-function MainContainer({ children }) {
+function Content({ children }) {
   return <Container>{children}</Container>;
 }
 
-MainContainer.propTypes = {
+Content.propTypes = {
   children: arrayOf(element.isRequired).isRequired,
 };
 
-export default MainContainer;
+export default Content;

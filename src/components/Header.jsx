@@ -11,6 +11,10 @@ const StyledH1 = styled.h1`
 
 const StyledLink = styled(Link)`
   font-size: 2rem;
+
+  @media (max-width: ${props => props.theme.mobile}) {
+    font-size: 1rem;
+  }
 `;
 
 function Header({ text, href }) {
