@@ -9,7 +9,6 @@ const Container = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
   justify-content: space-around;
   text-align: center;
 `;

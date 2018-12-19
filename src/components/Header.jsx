@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0 2rem 0rem;
+  margin: 0 2rem 2rem;
 `;
 
 const StyledH1 = styled.h1`

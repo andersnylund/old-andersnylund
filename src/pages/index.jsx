@@ -13,8 +13,7 @@ import theme from '../styles/theme';
 import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
-import Roboto from '../fonts/Roboto';
-import Divider from '../components/Divider';
+import Info from '../components/Info';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -25,15 +24,7 @@ const IndexPage = () => (
           <Header />
         </Pacifico>
         <Content>
-          <div>
-            <Roboto fontSize="3rem" letterSpacing="0.3rem">
-              Software developer
-            </Roboto>
-            <Divider />
-            <Roboto fontSize="2rem" letterSpacing="0.1rem">
-              Take a look at what I&#39;ve been doing lately
-            </Roboto>
-          </div>
+          <Info />
           <ItemContainer>
             <Image
               src={github}
