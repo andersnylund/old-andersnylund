@@ -38,8 +38,8 @@ const IndexPage = () => (
             />
           </ItemContainer>
         </Content>
+        <Footer />
       </Page>
-      <Footer />
     </div>
   </ThemeProvider>
 );
