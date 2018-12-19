@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
@@ -8,16 +8,12 @@ import Footer from '../components/Footer';
 import Pacifico from '../fonts/Pacifico';
 import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
-import MainContainer from '../components/MainContainer';
+import Content from '../components/Content';
 import theme from '../styles/theme';
+import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
-
-const Page = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`;
+import Info from '../components/Info';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -25,9 +21,10 @@ const IndexPage = () => (
       <GlobalStyle />
       <Page>
         <Pacifico>
-          <Header text="andersnylund" href="/" />
+          <Header />
         </Pacifico>
-        <MainContainer>
+        <Content>
+          <Info />
           <ItemContainer>
             <Image
               src={github}
@@ -40,9 +37,9 @@ const IndexPage = () => (
               href="https://www.linkedin.com/in/andersnylund/"
             />
           </ItemContainer>
-        </MainContainer>
-        <Footer />
+        </Content>
       </Page>
+      <Footer />
     </div>
   </ThemeProvider>
 );

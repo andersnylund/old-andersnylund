@@ -1,13 +1,23 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { ThemeProvider } from 'styled-components';
+
+import GlobalStyle from '../styles/globalStyle';
+import theme from '../styles/theme';
+import Page from '../components/Page';
+import Pacifico from '../fonts/Pacifico';
+import Header from '../components/Header';
 
 const NotFoundPage = () => (
-  <div>
-    <Typography variant="h1">NOT FOUND</Typography>
-    <Typography>
-      You just hit a route that doesn&#39;t exist... the sadness.
-    </Typography>
-  </div>
+  <ThemeProvider theme={theme}>
+    <div>
+      <GlobalStyle />
+      <Page>
+        <Pacifico>
+          <Header text="notfound..." href="/" />
+        </Pacifico>
+      </Page>
+    </div>
+  </ThemeProvider>
 );
 
 export default NotFoundPage;

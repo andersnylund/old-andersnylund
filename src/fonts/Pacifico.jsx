@@ -7,10 +7,6 @@ const Wrapper = styled.div`
   font-family: 'Pacifico';
   color: ${props => props.theme.pink};
   text-shadow: 2px 2px 3px ${props => props.theme.grey};
-
-  @media (max-width: ${props => props.theme.mobile}) {
-    font-size: 1rem;
-  }
 `;
 
 const Pacifico = ({ children }) => <Wrapper>{children}</Wrapper>;
