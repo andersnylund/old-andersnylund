@@ -1,9 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
-import github from '../images/github.svg';
-import linkedin from '../images/linkedin.svg';
-import Image from '../components/Image';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
@@ -13,6 +10,8 @@ import Page from '../components/Page';
 import GlobalStyle from '../styles/globalStyle';
 import Info from '../components/Info';
 import SEO from '../components/SEO';
+import GitHub from '../components/GitHub';
+import LinkedIn from '../components/LinkedIn';
 
 const Content = styled.section`
   flex: 1;
@@ -39,16 +38,8 @@ const IndexPage = () => (
         <Content>
           <Info />
           <ItemContainer>
-            <Image
-              src={github}
-              alt="GitHub logo"
-              href="https://www.github.com/andersnylund"
-            />
-            <Image
-              src={linkedin}
-              alt="LinkedIn logo"
-              href="https://www.linkedin.com/in/andersnylund/"
-            />
+            <GitHub />
+            <LinkedIn />
           </ItemContainer>
         </Content>
         <Footer />
