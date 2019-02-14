@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "author": "Anders Nylund <anders.nylund.an@gmail.com>",
   "dependencies": {
-    "@material-ui/core": "^3.6.1",
-    "@wapps/gatsby-plugin-material-ui": "^1.1.0",
     "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
@@ -16,6 +14,7 @@
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

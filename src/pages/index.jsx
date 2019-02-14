@@ -1,24 +1,38 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
-import github from '../images/github.svg';
-import linkedin from '../images/linkedin.svg';
-import Image from '../components/Image';
 import Footer from '../components/Footer';
-import Pacifico from '../fonts/Pacifico';
 import Header from '../components/Header';
-import ItemContainer from '../components/ItemContainer';
-import Content from '../components/Content';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
 import Info from '../components/Info';
 import SEO from '../components/SEO';
+import GitHub from '../components/GitHub';
+import LinkedIn from '../components/LinkedIn';
+
+const Content = styled.section`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: ${props => props.theme.maxWidth};
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  text-align: center;
+`;
+
+const Items = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
-    <div>
+    <>
       <GlobalStyle />
       <SEO
         title="andersnylund"
@@ -26,27 +40,17 @@ const IndexPage = () => (
         description="Software developer portfolio"
       />
       <Page>
-        <Pacifico>
-          <Header />
-        </Pacifico>
+        <Header />
         <Content>
           <Info />
-          <ItemContainer>
-            <Image
-              src={github}
-              alt="GitHub logo"
-              href="https://www.github.com/andersnylund"
-            />
-            <Image
-              src={linkedin}
-              alt="LinkedIn logo"
-              href="https://www.linkedin.com/in/andersnylund/"
-            />
-          </ItemContainer>
+          <Items>
+            <GitHub />
+            <LinkedIn />
+          </Items>
         </Content>
         <Footer />
       </Page>
-    </div>
+    </>
   </ThemeProvider>
 );
 
