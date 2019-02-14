@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "author": "Anders Nylund <anders.nylund.an@gmail.com>",
   "dependencies": {
-    "@material-ui/core": "^3.6.1",
-    "@wapps/gatsby-plugin-material-ui": "^1.1.0",
     "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",

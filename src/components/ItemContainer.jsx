@@ -1,18 +1,16 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import { arrayOf, element } from 'prop-types';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
 
 function ItemContainer({ children }) {
-  return (
-    <Grid container justify="space-evenly" alignItems="center">
-      {children.map((child, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <Grid key={index} item>
-          {child}
-        </Grid>
-      ))}
-    </Grid>
-  );
+  return <Container>{children}</Container>;
 }
 
 ItemContainer.propTypes = {
