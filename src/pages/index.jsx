@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
@@ -7,13 +7,23 @@ import Image from '../components/Image';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
-import Content from '../components/Content';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
 import Info from '../components/Info';
 import SEO from '../components/SEO';
+
+const Content = styled.section`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: ${props => props.theme.maxWidth};
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  text-align: center;
+`;
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>

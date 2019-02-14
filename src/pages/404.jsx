@@ -8,12 +8,12 @@ import Header from '../components/Header';
 
 const NotFoundPage = () => (
   <ThemeProvider theme={theme}>
-    <div>
+    <>
       <GlobalStyle />
       <Page>
-        <Header text="notfound..." href="/" />
+        <Header />
       </Page>
-    </div>
+    </>
   </ThemeProvider>
 );
 
