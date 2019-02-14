@@ -5,7 +5,7 @@ import { element } from 'prop-types';
 const Wrapper = styled.div`
   margin: 2rem;
   path {
-    transition: 0.1s;
+    transition: 0.5s;
   }
   :hover {
     cursor: pointer;
