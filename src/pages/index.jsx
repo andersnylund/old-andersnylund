@@ -14,11 +14,17 @@ import Page from '../components/Page';
 
 import GlobalStyle from '../styles/globalStyle';
 import Info from '../components/Info';
+import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <div>
       <GlobalStyle />
+      <SEO
+        title="andersnylund"
+        keywords={['software', 'developer', 'portfolio']}
+        description="Software developer portfolio"
+      />
       <Page>
         <Pacifico>
           <Header />
