@@ -5,7 +5,6 @@ import github from '../images/github.svg';
 import linkedin from '../images/linkedin.svg';
 import Image from '../components/Image';
 import Footer from '../components/Footer';
-import Pacifico from '../fonts/Pacifico';
 import Header from '../components/Header';
 import ItemContainer from '../components/ItemContainer';
 import Content from '../components/Content';
@@ -26,9 +25,7 @@ const IndexPage = () => (
         description="Software developer portfolio"
       />
       <Page>
-        <Pacifico>
-          <Header />
-        </Pacifico>
+        <Header />
         <Content>
           <Info />
           <ItemContainer>

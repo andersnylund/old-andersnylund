@@ -2,8 +2,6 @@ import React from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
 
-import Link from '../styles/Link';
-
 const Img = styled.img`
   margin: 2rem;
   height: 16rem;
@@ -14,9 +12,9 @@ const Img = styled.img`
 `;
 
 const Image = ({ src, alt, href }) => (
-  <Link href={href}>
+  <a href={href}>
     <Img src={src} alt={alt} />
-  </Link>
+  </a>
 );
 
 Image.propTypes = {

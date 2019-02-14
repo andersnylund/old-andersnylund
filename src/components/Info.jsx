@@ -1,17 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Roboto from '../fonts/Roboto';
-import Divider from './Divider';
+const Container = styled.div`
+  color: ${props => props.theme.brown};
+  font-weight: bold;
+  text-shadow: 1px 1px 1px ${props => props.theme.grey};
+`;
 
 const MainText = styled.div`
   font-size: 3rem;
-  letter-spacing: 1rem;
   margin: 1rem;
 
   @media (max-width: ${props => props.theme.mobile}) {
     font-size: 1.5rem;
   }
+`;
+
+const Divider = styled.div`
+  background: ${props => props.theme.brown};
+  height: 0.2rem;
+  box-shadow: 1px 1px 1px ${props => props.theme.grey};
 `;
 
 const SecondaryText = styled.div`
@@ -24,15 +32,13 @@ const SecondaryText = styled.div`
 `;
 
 const Info = () => (
-  <div>
-    <MainText>
-      <Roboto>Software developer</Roboto>
-    </MainText>
+  <Container>
+    <MainText>Software developer</MainText>
     <Divider />
     <SecondaryText>
-      <Roboto>Take a look at what I&#39;ve been doing lately</Roboto>
+      Take a look at what I&#39;ve been doing lately
     </SecondaryText>
-  </div>
+  </Container>
 );
 
 export default Info;

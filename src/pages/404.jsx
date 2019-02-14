@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/globalStyle';
 import theme from '../styles/theme';
 import Page from '../components/Page';
-import Pacifico from '../fonts/Pacifico';
 import Header from '../components/Header';
 
 const NotFoundPage = () => (
@@ -12,9 +11,7 @@ const NotFoundPage = () => (
     <div>
       <GlobalStyle />
       <Page>
-        <Pacifico>
-          <Header text="notfound..." href="/" />
-        </Pacifico>
+        <Header text="notfound..." href="/" />
       </Page>
     </div>
   </ThemeProvider>
