@@ -3,7 +3,6 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import ItemContainer from '../components/ItemContainer';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
@@ -24,6 +23,13 @@ const Content = styled.section`
   text-align: center;
 `;
 
+const Items = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <>
@@ -37,10 +43,10 @@ const IndexPage = () => (
         <Header />
         <Content>
           <Info />
-          <ItemContainer>
+          <Items>
             <GitHub />
             <LinkedIn />
-          </ItemContainer>
+          </Items>
         </Content>
         <Footer />
       </Page>

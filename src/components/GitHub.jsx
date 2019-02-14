@@ -1,17 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  padding: 2rem;
-  :hover {
-    * {
-      fill: ${props => props.theme.grey};
-    }
-  }
-`;
+import SvgWrapper from './SvgWrapper';
 
 const GitHub = () => (
-  <Wrapper>
+  <SvgWrapper>
     <svg
       width="300"
       height="300"
@@ -27,7 +19,7 @@ const GitHub = () => (
         fill="#000"
       />
     </svg>
-  </Wrapper>
+  </SvgWrapper>
 );
 
 export default GitHub;

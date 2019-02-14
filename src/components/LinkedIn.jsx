@@ -1,17 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  padding: 2rem;
-  :hover {
-    * {
-      fill: ${props => props.theme.grey};
-    }
-  }
-`;
+import SvgWrapper from './SvgWrapper';
 
 const LinkedIn = () => (
-  <Wrapper>
+  <SvgWrapper>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -32,7 +24,7 @@ const LinkedIn = () => (
         />
       </g>
     </svg>
-  </Wrapper>
+  </SvgWrapper>
 );
 
 export default LinkedIn;

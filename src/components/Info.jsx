@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Wrapper = styled.div`
   color: ${props => props.theme.brown};
   font-weight: bold;
   text-shadow: 1px 1px 1px ${props => props.theme.grey};
@@ -14,7 +14,10 @@ const Container = styled.div`
 `;
 
 const Info = () => (
-  <Container>Take a look at what I&#39;ve been doing lately</Container>
+  <Wrapper>
+    Hello! I&#39;m a software developer loving all things with web. Take a look
+    at what I&#39;ve been doing lately or visit my blog
+  </Wrapper>
 );
 
 export default Info;
