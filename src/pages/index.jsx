@@ -17,7 +17,7 @@ import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
-    <div>
+    <>
       <GlobalStyle />
       <SEO
         title="andersnylund"
@@ -43,7 +43,7 @@ const IndexPage = () => (
         </Content>
         <Footer />
       </Page>
-    </div>
+    </>
   </ThemeProvider>
 );
 
