@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { element } from 'prop-types';
+import { element, string } from 'prop-types';
 
 const Wrapper = styled.div`
   margin: 2rem;
@@ -15,10 +15,15 @@ const Wrapper = styled.div`
   }
 `;
 
-const SvgWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;
+const SvgWrapper = ({ children, link }) => (
+  <a href={link}>
+    <Wrapper>{children}</Wrapper>
+  </a>
+);
 
 SvgWrapper.propTypes = {
   children: element.isRequired,
+  link: string.isRequired,
 };
 
 export default SvgWrapper;

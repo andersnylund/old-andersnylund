@@ -3,7 +3,7 @@ import React from 'react';
 import SvgWrapper from './SvgWrapper';
 
 const GitHub = () => (
-  <SvgWrapper>
+  <SvgWrapper link="https://www.github.com/andersnylund">
     <svg
       width="300"
       height="300"
