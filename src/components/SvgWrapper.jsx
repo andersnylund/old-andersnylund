@@ -1,8 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 import { element } from 'prop-types';
 
-const Wrapper = styled.div`
+const Posed = posed.div({
+  hoverable: true,
+  normal: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.05,
+  },
+});
+
+const Wrapper = styled(Posed)`
   margin: 2rem;
   path {
     transition: 0.3s;
@@ -19,7 +30,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const SvgWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;
+const SvgWrapper = ({ children }) => (
+  <Wrapper pose="normal">{children}</Wrapper>
+);
 
 SvgWrapper.propTypes = {
   children: element.isRequired,
