@@ -6,18 +6,18 @@ const Container = styled.nav`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0 2rem 2rem;
+  padding: 0 2rem 2rem;
   font-family: 'Pacifico';
   text-shadow: 2px 2px 3px ${props => props.theme.grey};
+  background-color: ${props => props.theme.blue};
+  border-bottom: 2px solid ${props => props.theme.grey};
 `;
 
 const H1 = styled.h1`
-  user-select: none;
   margin: 1rem 1rem 0;
 `;
 
 const H3 = styled.h3`
-  user-select: none;
   margin: 1rem 1rem 0;
 `;
 

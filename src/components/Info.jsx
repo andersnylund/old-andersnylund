@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  color: ${props => props.theme.brown};
-  font-weight: bold;
+  color: ${props => props.theme.black};
   text-shadow: 1px 1px 1px ${props => props.theme.grey};
-  font-size: 3rem;
-  margin: 1rem;
+  font-size: 2rem;
+  margin: 4rem;
 
   @media (max-width: ${props => props.theme.mobile}) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 

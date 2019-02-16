@@ -5,13 +5,17 @@ import { element } from 'prop-types';
 const Wrapper = styled.div`
   margin: 2rem;
   path {
-    transition: 0.5s;
+    transition: 0.3s;
   }
   :hover {
     cursor: pointer;
     path {
-      fill: ${props => props.theme.black};
+      fill: ${props => props.theme.grey};
     }
+  }
+
+  @media (max-width: ${props => props.theme.mobile}) {
+    transform: scale(0.7);
   }
 `;
 
