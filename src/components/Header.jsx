@@ -9,7 +9,6 @@ const Container = styled.nav`
   padding: 0 2rem 2rem;
   font-family: 'Pacifico';
   text-shadow: 2px 2px 3px ${props => props.theme.grey};
-  background-color: ${props => props.theme.blue};
   border-bottom: 2px solid ${props => props.theme.grey};
 `;
 

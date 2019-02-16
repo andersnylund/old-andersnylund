@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Hero from '../components/Hero';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
@@ -41,6 +42,7 @@ const IndexPage = () => (
       />
       <Page>
         <Header />
+        <Hero />
         <Content>
           <Info />
           <Items>
