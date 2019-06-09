@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
-import { element } from 'prop-types';
+import { element, string } from 'prop-types';
 
 const Posed = posed.div({
   hoverable: true,
@@ -30,12 +30,15 @@ const Wrapper = styled(Posed)`
   }
 `;
 
-const SvgWrapper = ({ children }) => (
-  <Wrapper pose="normal">{children}</Wrapper>
+const SvgWrapper = ({ children, link }) => (
+  <a href={link}>
+    <Wrapper pose="normal">{children}</Wrapper>
+  </a>
 );
 
 SvgWrapper.propTypes = {
   children: element.isRequired,
+  link: string.isRequired,
 };
 
 export default SvgWrapper;
