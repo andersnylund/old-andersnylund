@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin: 4rem;
 
   @media (max-width: ${props => props.theme.mobile}) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 `;
 
