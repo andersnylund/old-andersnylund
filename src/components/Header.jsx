@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProfileImage from './ProfileImage';
 
 const Container = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 0 2rem 2rem;
+  padding: 2rem 2rem;
   font-family: 'Pacifico';
   text-shadow: 2px 2px 3px ${props => props.theme.grey};
 `;
@@ -30,12 +30,19 @@ const Link = styled.a`
   }
 `;
 
+const FirstChild = styled.div`
+  display: flex;
+`;
+
 function Header() {
   return (
     <Container>
-      <Link href="https://www.andersnylund.com">
-        <H1>andersnylund</H1>
-      </Link>
+      <FirstChild>
+        <ProfileImage />
+        <Link href="https://www.andersnylund.com">
+          <H1>andersnylund</H1>
+        </Link>
+      </FirstChild>
       <Link href="https://blog.andersnylund.com">
         <H3>blog -&gt;</H3>
       </Link>
