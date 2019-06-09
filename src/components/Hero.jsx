@@ -4,9 +4,12 @@ import styled from 'styled-components';
 import image from '../images/mac.jpg';
 
 const Section = styled.section`
+  background-image: url(${image});
   background-size: cover;
-  background: url(${image}) no-repeat center center;
+  background-repeat: no-repeat;
   height: 40rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
 `;
 
 const Darkened = styled.div`
@@ -18,29 +21,24 @@ const Darkened = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem;
 `;
 
 const H2 = styled.h2`
   font-size: 4rem;
   letter-spacing: 0.1rem;
-  margin: 0;
   text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
   color: hsl(0, 0%, 90%);
-`;
 
-const H3 = styled.h2`
-  color: white;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  color: hsl(0, 0%, 90%);
+  @media (max-width: ${props => props.theme.mobile}) {
+    font-size: 2rem;
+  }
 `;
 
 const Hero = () => (
   <Section>
     <Darkened>
-      <H2>Web Developer</H2>
-      <H3>Loving all things with web</H3>
+      <H2>Developer Loving All Things with the web</H2>
     </Darkened>
   </Section>
 );

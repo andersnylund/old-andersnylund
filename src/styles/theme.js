@@ -7,6 +7,6 @@ export default {
   yellow: '#d7ceb2',
   grey: '#333333',
   mobile: '480px',
-  maxWidth: '920px',
+  maxWidth: '720px',
   footer: '3rem',
 };
