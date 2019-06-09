@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
-import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Hero from '../components/Hero';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 
@@ -12,7 +12,7 @@ import SEO from '../components/SEO';
 import GitHub from '../components/GitHub';
 import LinkedIn from '../components/LinkedIn';
 
-const Content = styled.section`
+const Content = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,18 @@ const Content = styled.section`
   margin-right: auto;
   justify-content: space-around;
   text-align: center;
+  background-color: hsla(0, 0%, 90%);
+  border-radius: 2rem;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+`;
+
+const ContentWrapper = styled.section`
+  display: flex;
+  justify-content: center;
 `;
 
 const Items = styled.div`
@@ -41,14 +53,16 @@ const IndexPage = () => (
       />
       <Page>
         <Header />
-        <Content>
-          <Info />
-          <Items>
-            <GitHub />
-            <LinkedIn />
-          </Items>
-        </Content>
-        <Footer />
+        <Hero />
+        <ContentWrapper>
+          <Content>
+            <Info />
+            <Items>
+              <GitHub />
+              <LinkedIn />
+            </Items>
+          </Content>
+        </ContentWrapper>
       </Page>
     </>
   </ThemeProvider>
