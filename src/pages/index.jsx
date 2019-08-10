@@ -25,8 +25,6 @@ const Content = styled.div`
   border-radius: 2rem;
   margin-top: -5rem;
   margin-bottom: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
   box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
 `;
 

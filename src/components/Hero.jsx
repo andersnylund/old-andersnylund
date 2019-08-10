@@ -8,7 +8,6 @@ const Section = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   height: 40rem;
-  margin: 0 1rem;
   text-transform: uppercase;
 `;
 
@@ -21,7 +20,7 @@ const Darkened = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 const H2 = styled.h2`
