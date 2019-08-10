@@ -6,6 +6,7 @@ const Container = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 2rem;
   font-family: 'Pacifico';
   text-shadow: 2px 2px 3px ${props => props.theme.grey};
@@ -23,29 +24,37 @@ const Link = styled.a`
   text-decoration: none;
   color: ${props => props.theme.pink};
 
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   @media (max-width: ${props => props.theme.mobile}) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 
-const FirstChild = styled.div`
+const FlexBox = styled.div`
   display: flex;
 `;
 
 function Header() {
   return (
     <Container>
-      <FirstChild>
-        <ProfileImage />
-        <Link href="https://www.andersnylund.com">
+      <Link href="/">
+        <FlexBox>
+          <ProfileImage />
           <H1>andersnylund</H1>
-        </Link>
-      </FirstChild>
-      <Link href="https://blog.andersnylund.com">
-        <H3>blog -&gt;</H3>
+        </FlexBox>
       </Link>
+      <FlexBox>
+        <Link href="/about">
+          <H3>/about</H3>
+        </Link>
+        <Link href="https://blog.andersnylund.com">
+          <H3>/blog</H3>
+        </Link>
+        <Link href="/uses">
+          <H3>/uses</H3>
+        </Link>
+      </FlexBox>
     </Container>
   );
 }
