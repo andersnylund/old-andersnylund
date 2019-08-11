@@ -62,8 +62,8 @@ const About = () => (
             enjoy their life more.
           </p>
           <p>
-            During my journey I have used more or less the following
-            technologies
+            During my career I have used the following technologies, more or
+            less:
           </p>
           <ul className="list">
             <li>JavaScript</li>
