@@ -21,10 +21,10 @@ const Info = () => (
   <Wrapper>
     <p>Fullstack web developer solving problems with modern technologies</p>
     <p className="secondary">
-      Take a look at what I&#39;ve been doing lately
       <span role="img" aria-label="pointing down">
         👇
       </span>
+      &nbsp;Take a look at what I&#39;ve been doing lately
     </p>
   </Wrapper>
 );
