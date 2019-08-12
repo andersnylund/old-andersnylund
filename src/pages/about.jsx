@@ -41,7 +41,7 @@ const About = () => (
       <Page>
         <Header />
         <Container>
-          <h2>TLDR;</h2>
+          <h2>TL;DR</h2>
           <p>
             Fullstack web developer from Finland. I love to solve problems and
             create stuff. I constantly learn and build things with my freshly
