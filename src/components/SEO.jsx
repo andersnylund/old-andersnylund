@@ -3,6 +3,8 @@ import { arrayOf, string } from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+import ProfileImage from './ProfileImage';
+
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site {
@@ -59,6 +61,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 name: `twitter:description`,
                 content: metaDescription,
+              },
+              {
+                name: `twitter:image`,
+                content: ProfileImage,
               },
             ]
               .concat(

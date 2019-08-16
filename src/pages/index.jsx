@@ -46,8 +46,8 @@ const IndexPage = () => (
       <GlobalStyle />
       <SEO
         title="andersnylund"
-        keywords={['software', 'developer', 'portfolio']}
-        description="Software developer portfolio"
+        keywords={['software', 'web', 'developer', 'portfolio']}
+        description="Anders Nylund - Web Developer"
       />
       <Page>
         <Header />
