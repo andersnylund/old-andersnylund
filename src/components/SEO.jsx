@@ -3,11 +3,14 @@ import { arrayOf, string } from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+import ProfileImage from '../images/profile.jpg';
+
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site {
       siteMetadata {
         title
+        twitterHandle
       }
     }
   }
@@ -18,6 +21,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     <StaticQuery
       query={detailsQuery}
       render={data => {
+        const { twitterHandle } = data.site.siteMetadata;
         const metaDescription =
           description || data.site.siteMetadata.description;
         return (
@@ -46,11 +50,11 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:card`,
-                content: `summary`,
+                content: `summary_large_image`,
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
+                content: twitterHandle,
               },
               {
                 name: `twitter:title`,
@@ -59,6 +63,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 name: `twitter:description`,
                 content: metaDescription,
+              },
+              {
+                name: `twitter:image`,
+                content: ProfileImage,
               },
             ]
               .concat(

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Anders Nylund',
+    twitterHandle: '@ndrsnlnd',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
