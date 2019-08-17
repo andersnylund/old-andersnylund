@@ -3,13 +3,13 @@ import { arrayOf, string } from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+import ProfileImage from '../images/profile.jpg';
+
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site {
       siteMetadata {
         title
-        url
-        image
       }
     }
   }
@@ -22,9 +22,6 @@ function SEO({ description, lang, meta, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const image = `${data.site.siteMetadata.url}${
-          data.site.siteMetadata.image
-        }`;
         return (
           <Helmet
             htmlAttributes={{
@@ -67,7 +64,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:image`,
-                content: image,
+                content: ProfileImage,
               },
             ]
               .concat(

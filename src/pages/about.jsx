@@ -5,6 +5,7 @@ import GlobalStyle from '../styles/globalStyle';
 import theme from '../styles/theme';
 import Page from '../components/Page';
 import Header from '../components/Header';
+import SEO from '../components/SEO';
 
 const Container = styled.section`
   max-width: ${props => props.theme.maxWidth};
@@ -38,6 +39,11 @@ const About = () => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
+      <SEO
+        title="about"
+        keywords={['software', 'web', 'developer', 'portfolio']}
+        description="Anders Nylund - Web Developer"
+      />
       <Page>
         <Header />
         <Container>
