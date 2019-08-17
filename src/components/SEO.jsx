@@ -10,6 +10,7 @@ const detailsQuery = graphql`
     site {
       siteMetadata {
         title
+        twitterHandle
       }
     }
   }
@@ -20,6 +21,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     <StaticQuery
       query={detailsQuery}
       render={data => {
+        const { twitterHandle } = data.site.siteMetadata;
         const metaDescription =
           description || data.site.siteMetadata.description;
         return (
@@ -52,7 +54,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
+                content: twitterHandle,
               },
               {
                 name: `twitter:title`,
