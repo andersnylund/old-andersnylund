@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Anders Nylund',
+    url: 'https://www.andersnylund.com',
+    image: '/images/profile.jpg',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
