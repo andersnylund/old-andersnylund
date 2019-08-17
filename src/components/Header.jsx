@@ -51,9 +51,6 @@ function Header() {
         <Link href="https://blog.andersnylund.com">
           <H3>/blog</H3>
         </Link>
-        <Link href="/uses">
-          <H3>/uses</H3>
-        </Link>
       </FlexBox>
     </Container>
   );
